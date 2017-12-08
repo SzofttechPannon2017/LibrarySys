@@ -1,0 +1,24 @@
+#ifndef USER_H
+#define USER_H
+
+#include <string>
+#include <iostream>
+#include <list>
+#include "publication.h"
+
+using namespace std;
+
+
+class User
+{
+    string Name;
+    string Role;
+    list<Publication> rents;
+    int Balance;
+public:
+
+    User(const string &N, const string &R);
+
+};
+
+#endif // USER_H

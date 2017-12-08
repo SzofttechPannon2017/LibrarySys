@@ -1,0 +1,15 @@
+#include "press.h"
+
+Press::Press()
+{
+
+}
+
+Press::Press(const string &ID, const string &t, const string &r):
+    ID(ID),
+    Title(t),
+    Release(r)
+    
+{
+    
+}

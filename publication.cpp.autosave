@@ -1,0 +1,14 @@
+#include "publication.h"
+
+Publication::Publication ()
+{
+
+}
+
+
+Publication::Publication(const string &ID, const string &t):
+    ID(ID),
+    Title (t)
+{
+    
+}
