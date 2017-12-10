@@ -5,6 +5,7 @@
 #include "user.h"
 #include "book.h"
 #include "rent.h"
+#include "reservation.h"
 
  class Library
 
@@ -12,7 +13,7 @@
     list<User> Users;
     list<Publication> Publications;
     list<Rent> Rents;
-
+    list<Reservation> Reservations;
 
 public:
     Library();
@@ -29,6 +30,9 @@ public:
     string Find(const string &title);
     Publication FindPub(const string &title);
     void addRent( User &u, Publication &p);
+    void removeRent(User &u, Publication &p);
+    void addReservation( User &u, Publication &p);
+    void removeReservation( User &u, Publication &p);
 };
 
 #endif // LIBRARY_H

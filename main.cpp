@@ -6,7 +6,25 @@
 #include "library.h"
 #include "rent.h"
 #include <string>
+#include <ctime>
 using namespace std;
+
+
+string getTime() {
+
+    time_t rawtime;
+      struct tm * timeinfo;
+      char buffer[80];
+
+      time (&rawtime);
+      timeinfo = localtime(&rawtime);
+
+      strftime(buffer,sizeof(buffer),"%d-%m-%Y %I:%M:%S",timeinfo);
+      std::string str(buffer);
+      return str;
+}
+
+
 
 int main()
 {

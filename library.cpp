@@ -123,20 +123,38 @@ void Library::addRent( User &u, Publication &p)
     Rents.push_back(R);
 }
 
-
-
-
-/*
- void addRent(const string &user, const string &publ)
+void Library::removeRent(User &u, Publication &p)
 {
-    User U;
-    Publication P;
-    U=this->findUser(user);
+    auto it=Rents.begin();
 
-    Rent R(U,P);
+    for(;it!=Rents.end();++it) {
 
+     if (it->getUser().getID()==u.getID() && it->getPublication().getID()==p.getID()){
 
+         it=Rents.erase(it);
+        }
 
 }
-*/
 
+}
+
+void Library::addReservation(User &u, Publication &p)
+{
+    Reservation Res(u,p);
+    Reservations.push_back(Res);
+}
+
+void Library::removeReservation(User &u, Publication &p)
+{
+    auto it=Reservations.begin();
+
+    for(;it!=Reservations.end();++it) {
+
+     if (it->getUser().getID()==u.getID() && it->getPublication().getID()==p.getID()){
+
+         it=Reservations.erase(it);
+        }
+
+}
+
+}

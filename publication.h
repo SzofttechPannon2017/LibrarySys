@@ -21,6 +21,7 @@ public:
     int getAvaliableAmount();
     void toRent();
     void fromRent();
+    string getID();
 
 
 

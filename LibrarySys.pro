@@ -9,7 +9,8 @@ SOURCES += main.cpp \
     book.cpp \
     press.cpp \
     library.cpp \
-    rent.cpp
+    rent.cpp \
+    reservation.cpp
 
 HEADERS += \
     user.h \
@@ -17,4 +18,5 @@ HEADERS += \
     book.h \
     press.h \
     library.h \
-    rent.h
+    rent.h \
+    reservation.h

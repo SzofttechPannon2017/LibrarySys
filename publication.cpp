@@ -23,6 +23,11 @@ void Publication::toRent()
 void Publication::fromRent()
 {
     AvaliableAmount++;
-    }
+}
+
+string Publication::getID()
+{
+    return this->ID;
+}
 
 

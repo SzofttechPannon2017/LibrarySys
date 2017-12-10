@@ -42,3 +42,17 @@ void User::decreaseBalance(int balance)
 {
     this->Balance-=balance;
 }
+
+string User::getID()
+{
+    return this->ID;
+}
+
+/*
+inline bool User::operator ==(const User &left, const User &right)
+{
+       return (left.ID==right.ID);
+}
+
+*/
+
